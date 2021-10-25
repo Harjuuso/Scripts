@@ -703,10 +703,10 @@ function Material.Load(Config)
 			wait(0.15)
 			MainFrame.ClipsDescendants = false
 			TweenService:Create(MainShadow, TweenInfo.new(0.15), {ImageTransparency = 0}):Play()
-            Content.Visible = false
+            game:GetService("CoreGui").Template.MainFrame.Content.Visible = false
 		else
 			MainFrame.ClipsDescendants = true
-            Content.Visible = true
+            game:GetService("CoreGui").Template.MainFrame.Content.Visible = true
 		end
 	end)
 

@@ -10,7 +10,7 @@ local ContentService = game:GetService("ContentProvider")
 
 local Themes = {
 	Dark = {
-		MainFrame = Color3.fromRGB(30,30,30),
+		MainFrame = Color3.fromRGB(30,30,255),
 		Minimise = Color3.fromRGB(255,106,0),
 		MinimiseAccent = Color3.fromRGB(147,59,0),
 		Maximise = Color3.fromRGB(25,255,0),

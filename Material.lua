@@ -10,7 +10,7 @@ local ContentService = game:GetService("ContentProvider")
 
 local Themes = {
 	Dark = {
-		MainFrame = Color3.fromRGB(30,30,255),
+		MainFrame = Color3.fromRGB(30,30,30),
 		Minimise = Color3.fromRGB(255,106,0),
 		MinimiseAccent = Color3.fromRGB(147,59,0),
 		Maximise = Color3.fromRGB(25,255,0),
@@ -703,10 +703,8 @@ function Material.Load(Config)
 			wait(0.15)
 			MainFrame.ClipsDescendants = false
 			TweenService:Create(MainShadow, TweenInfo.new(0.15), {ImageTransparency = 0}):Play()
-            game:GetService("CoreGui").Template.MainFrame.Content.Visible = false
 		else
 			MainFrame.ClipsDescendants = true
-            game:GetService("CoreGui").Template.MainFrame.Content.Visible = true
 		end
 	end)
 
